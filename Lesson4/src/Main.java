@@ -14,8 +14,8 @@ public class Main {
         boolean result = sumTest(2, 6);//5
         System.out.println(result);
 
-        String method6 = numberSingTest(-2);//6
-        System.out.println(method6);
+        numberSingTest(2);//6
+
 
         boolean method7 = numberSingTestBoolean(-2);//7
         System.out.println(method7);
@@ -43,7 +43,7 @@ public class Main {
 
 
         int[] array3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};//12
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array3.length; i++) {
             if (array3[i] < 6) {
                 array3[i] = array3[i] * 2;
 
@@ -108,14 +108,14 @@ public class Main {
 
     }
 
-    public static String numberSingTest(int a) {
+    public static void numberSingTest(int a) {
         String result;
         if (a >= 0) {
             result = "Число положительное";
         } else {
             result = "Число отрицательное";
         }
-        return result;
+        System.out.println(result);
     }
 
     public static boolean numberSingTestBoolean(int a) {
